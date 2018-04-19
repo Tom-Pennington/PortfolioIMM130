@@ -1,0 +1,687 @@
+/*
+Tympanus.net is a super useful reference!!
+
+link styles and how to put images into the css are on session 5 in the class hub page. This is important.
+
+unsplash + lorumpixel for images
+
+look at media qeuries on the notes and w3schools
+
+Responsiveimages.org
+
+Responsivegridsystem for the image content for the site
+
+formspree.io for honeypot and other form things
+
+wampserver to test out php if I include any
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #95e593;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.logintext {
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: cadetblue;
+}
+
+.mainheader {
+    margin: 150px;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 60px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: darkslategray;
+    position: relative;
+}
+
+.mainheader2 {
+    font-size: 70px;
+    margin-bottom: 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #37b373;
+    background-color: darkslategray;
+}
+
+.lowerheader {
+    font-family: 'Nanum Myeongjo', serif;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #7ab878;
+    text-align: center;
+    color: darkslategray;
+}
+
+.lowerheader2 {
+    font-family: 'Nanum Myeongjo', serif;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: darkslategray;
+}
+
+.lowerheader4 {
+    font-family: 'Nanum Myeongjo', serif;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: darkslategray;
+    text-align: center;
+}
+
+.lowerheader3 {
+    font-family: 'Nanum Myeongjo', serif;
+    margin-bottom: 20px;
+    font-size: 70px;
+    color: #7ab878;
+    text-align: center;
+    color: darkslategray;
+}
+
+.intropagetext {
+    font-family: 'Nanum Myeongjo', serif;
+    line-height: 30px;
+}
+
+.text {
+    font-family: 'Open Sans Condensed', serif;
+    color: darkslategray;
+    font-size: 20px;
+}
+
+.text2 {
+    font-family: 'Open Sans Condensed', serif;
+    color: darkslategray;
+    font-size: 40px;
+}
+
+.signup {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 20px;
+    color: #82aa85;
+    text-align: center;
+
+}
+
+.login {
+    font-family: 'Nanum Myeongjo', serif;
+    border: 1px solid #42464b;
+    border-radius: 10px;
+    height: 257px;
+    margin: 20px auto 0;
+    width: 298px;
+    background: #82aa85;
+}
+
+.login h1 {
+    background-image: linear-gradient(top, #f1f3f3, #d4dae0);
+    border-bottom: 1px solid #a6abaf;
+    border-radius: 6px 6px 0 0;
+    box-sizing: border-box;
+    color: #727678;
+    display: block;
+    height: 43px;
+    font: 'Open Sans Condensed', serif;
+    padding-top: 14px;
+    margin: 0;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 #fff;
+}
+
+input[type="password"],
+input[type="text"] {
+    border: 1px solid #a1a3a3;
+    border-radius: 4px;
+    box-shadow: 0 1px #fff;
+    box-sizing: border-box;
+    color: #696969;
+    height: 39px;
+    margin: 31px 0 0 29px;
+    padding-left: 37px;
+    transition: box-shadow 0.3s;
+    width: 240px;
+}
+
+input[type="password"]:focus,
+input[type="text"]:focus {
+    box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
+    outline: 0;
+}
+
+.show-password {
+    display: block;
+    height: 16px;
+    margin: 26px 0 0 28px;
+    width: 87px;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    height: 16px;
+    opacity: 0;
+    position: relative;
+    width: 64px;
+}
+
+input[type="checkbox"]:checked {
+    left: 29px;
+    width: 58px;
+}
+
+.toggle {
+    display: block;
+    height: 16px;
+    margin-top: -20px;
+    width: 87px;
+    z-index: -1;
+}
+
+input[type="checkbox"]:checked + .toggle {
+    background-position: 0 -16px
+}
+
+.forgot {
+    color: #7f7f7f;
+    display: inline-block;
+    float: right;
+    font: 12px/1 sans-serif;
+    left: -19px;
+    position: relative;
+    text-decoration: none;
+    top: 5px;
+    transition: color .4s;
+}
+
+.forgot:hover {
+    color: #3b3b3b
+}
+
+input[type="submit"] {
+    width: 240px;
+    height: 35px;
+    display: block;
+    font-family: 'Open Sans Condensed', serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1px 0px #37a69b;
+    padding-top: 6px;
+    margin: 29px 0 0 29px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background-color: #37a69b;
+    background-image: linear-gradient(top, #3db0a6, #3111);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #497a78, 0px 10px 5px #999;
+}
+
+
+input[type="submit"]:active {
+    top: 3px;
+    box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #31524d, 0px 5px 3px #999;
+}
+
+.submit {
+    font-family: 'Open Sans Condensed', serif;
+    font-size: 30px;
+    color: darkslategray;
+    text-align: center;
+}
+
+.space1 {
+    margin-bottom: 20px;
+}
+
+.space2 {
+    margin-bottom: 20px;
+    background-color: darkslategray;
+    color: darkslategray;
+    margin-top: 20px;
+}
+
+.accountnav {
+    text-align: center;
+    padding-top: 4px;
+    padding-left: 25px;
+    font-size: 25px;
+}
+
+.mainnav {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.accountheader {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 50px;
+    color: #37b373;
+    background-color: darkslategray;
+}
+
+.robotcheckbox {
+    color: aliceblue;
+}
+
+.sidebartext {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.dragdrop {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+    color: darkgray;
+}
+
+.forumtext {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+    margin-left: 250px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 50px;
+    color: #444;
+    margin-top: 5%;
+    margin-left: 33%;
+}
+
+.box {
+    color: #fff;
+    border-radius: 5px;
+    width: 130%;
+    height: 60px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 150%;
+}
+
+img {
+    width: 100%;
+}
+
+#login-info {
+    background-color: aliceblue;
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+    line-height: 30px;
+    position: relative;
+    top: 0px;
+    margin: 0 auto;
+}
+
+#login-button {
+    background-color: darkslategray;
+    width: 100px;
+    padding: 10px;
+    position: relative;
+    top: 0px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#NotaRobot {
+    background-color: aliceblue;
+    width: 20px;
+    border: 3px solid lightgrey;
+    position: relative;
+    top: -100px;
+    margin: 0 auto;
+}
+
+#sidebar {
+    background-color: #95e593;
+    width: 200px;
+    Position: absolute;
+    left: 10px;
+    margin-top: 40px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+
+#accountbox {
+    background-color: #82aa85;
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    display: inline-block;
+    top: 5px;
+    right: 5px;
+    border: 10px #82aa85 solid;
+}
+
+#accountimage {
+    background-color: aqua;
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    top: 22px;
+    right: 205px;
+}
+
+#sidebarbox1,
+#sidebarbox2,
+#sidebarbox3 {
+    background-color: #2d5146;
+    width: 130px;
+    height: 70px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    border-color: #95e593;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    display: block;
+    border-radius: 10px;
+}
+
+#largesidebarbox {
+    background-color: #2d5146;
+    position: relative;
+    width: 190px;
+    height: 160px;
+    top: 7px;
+    left: 5px;
+    line-height: 23px;
+    border-radius: 10px;
+}
+
+#space1 {
+    background-color: darkslategray;
+    height: 20px;
+}
+
+#recent-popular {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: stretch;
+    left: 230px;
+    top: 10px;
+}
+
+#submitbox {
+    background-color: aliceblue;
+    position: relative;
+    height: 400px;
+    width: 650px;
+    top: 30px;
+    left: 55px;
+    border-radius: 10px;
+}
+
+#title-descriptionbox {
+    background-color: aliceblue;
+    position: relative;
+    width: 650px;
+    height: 100px;
+    top: 63%;
+    border: 2px 0 solid;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#cancelbox {
+    background-color: darkseagreen;
+    position: relative;
+    width: 60px;
+    height: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    top: 164px;
+    left: 100px;
+    border-radius: 10px;
+}
+
+#donebox {
+    background-color: darkseagreen;
+    position: relative;
+    width: 60px;
+    height: 10px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    top: 145px;
+    left: 570px;
+    border-radius: 10px;
+}
+
+#smallsubmitbox {
+    background-color: darkseagreen;
+    position: relative;
+    width: 74px;
+    height: 30px;
+    top: 150px;
+    left: 275px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+#adult {
+    position: relative;
+    top: 240px;
+    left: 250px;
+}
+
+#submitprofile {
+    background-color: darkslategray;
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    top: 5px;
+    margin-left: 6%;
+    left: 0px;
+    border-radius: 10px;
+}
+
+#topbar {
+    position: relative;
+    background-color: #c1eac1;
+    width: auto;
+    height: 50px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+
+.profilegrid {
+    margin: 0 0 20px 0;
+    width: 128%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 10%);
+    grid-template-rows: repeat(3, 100px);
+    justify-content: center;
+    align-content: center;
+    margin-top: 40px
+}
+
+.profilebox {
+    background-color: #f0fff0;
+    color: black;
+    border-radius: 5px;
+    font-size: 100%;
+    height: 200%;
+}
+
+.profileitem1 {
+    grid-column: 1 / 5;
+    grid-row: 1 / 5;
+    height: 100px;
+}
+
+.profileitem2 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    text-align: center;
+    font-size: 140%;
+    padding: 10px;
+}
+
+.profileitem3 {
+    grid-column: 1 / 5;
+    grid-row: 4 / 6;
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #f0fff0;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color:darkslategray;
+}
+
+.profileitem4 {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+    font-size: 150%;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.profile-slider {
+    align-content: center;
+    width: 150%;
+    margin-left: 0 auto;
+}
+
+.sliderimg {
+    width: 20%;
+    height: 100%;
+}
+
+#largeforumbox {
+    background-color: #beddba;
+    grid-column: col 4 / span 3;
+    grid-row: row 1;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.forumgrid {
+    margin: 0 0 20px 0;
+    position: absolute;
+    width: 128%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 10%);
+    grid-template-rows: repeat(3, 100px);
+    justify-content: center;
+    align-content: center;
+    margin-top: 40px
+}
+
+.rules {
+    background-color: #ddffd9;
+    grid-column: 1 / 4;
+    grid-row: 1;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 200%;
+
+}
+
+.FAQ {
+    background-color: #ddffd9;
+    grid-column: 1 / 4;
+    grid-row: 2;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 200%;
+}
+
+.Help {
+    background-color: #ddffd9;
+    grid-column: 1 / 4;
+    grid-row: 3;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 200%;
+}
+
+.News {
+    background-color: #ddffd9;
+    grid-column: 1 / 4;
+    grid-row: 4;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 200%;
+}
+
+body {
+    background-color: #82aa85;
+}
+
+@media only screen and (max-width: 600px){
+    #sidebar {
+        position: relative;
+        width: 90%;
+        margin: 20px auto;
+    }
+    #sidebarbox1,
+    #sidebarbox1,
+    #sidebarbox1 {
+        position: relative;
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    
+}
+
+@media only screen and (min-width: 1200px){
+    
+}

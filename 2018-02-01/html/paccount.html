@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Account Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:bold, bolditalic, italic|Open+Sans+Condensed:300:bold, bolditalic, italic" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+
+    
+
+    <h1 class=mainheader2><a href="homepage">Portfolio</a></h1>
+    <div id="topbar">
+        <h5 class="submit"><a id="submitprofile" href="submit"> Submit</a></h5>
+    </div>
+
+    <aside id="sidebar">
+        <h3 class="lowerheader2">What are You Looking for Today?</h3>
+
+        <a id="sidebarbox1" class="mainnav" href="gallery.html"> Gallery</a>
+
+        <a id="sidebarbox2" class="mainnav" href="forum.html"> Forum</a>
+
+        <a id="sidebarbox3" class="mainnav" href="referenced.html"> Reference Database</a>
+
+    </aside>
+
+    <div class="profilegrid">
+        <div class="profilebox profileitem1">
+            <h1>John Smith</h1>
+            <h2 class=lowerheader2>Hobbyist Photographer</h2>
+        </div>
+        <div class="profilebox profileitem2">
+            <h4>About</h4>
+            <h5>Hi! I'm John, just a guy who is looking to improve on a hobby and maybe even take it to the next level!</h5>
+        </div>
+        <div class="profileitem3">
+            <h3>Favorites</h3>
+            
+            <div class="profile-slider">
+                <img class="sliderimg" src="https://picsum.photos/200/?random" alt="Random Image">
+                <img class="sliderimg" src="https://picsum.photos/200/?random" alt="Random Image">
+                <img class="sliderimg" src="https://picsum.photos/200/?random" alt="Random Image">
+            </div>
+            
+        </div>
+        <div class="profilebox profileitem4">
+            <h4>Equipment</h4>
+            <ul>
+                <li>Canon - PowerShot SX530</li>
+                <li>Nikon 70-200mm f/4G AF-S ED VR Telephoto Zoom Lens</li>
+            </ul>
+        </div>
+
+    </div>
+    <footer>
+        <a href="https://validator.w3.org/check?uri=referer">Validator</a>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    
+    <script>
+        $(document).on('ready', function() {
+        $('.profile-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: true,
+    infinite: true,
+    cssEase: 'linear'
+        });
+        });
+    </script>
+    
+</body>
+
+</html>
